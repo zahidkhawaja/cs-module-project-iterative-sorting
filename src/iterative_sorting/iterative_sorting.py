@@ -1,4 +1,5 @@
-# TO-DO: Complete the selection_sort() function below
+# Runtime complexity: O(n ^ 2) - Quadratic
+# Nested for-loop
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
@@ -17,7 +18,7 @@ def selection_sort(arr):
     return arr
 
 
-# TO-DO:  implement the Bubble Sort function below
+# Runtime complexity: O(n ^ 2) - Quadratic
 def bubble_sort(arr):
 
     needs_swapping = True
