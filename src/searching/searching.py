@@ -1,3 +1,4 @@
+# Runtime complexity O(n) - Linear
 def linear_search(arr, target):
 
     for x in range(len(arr)):
@@ -6,7 +7,8 @@ def linear_search(arr, target):
         
     return -1 # Not found
 
-# Write an iterative implementation of Binary Search
+# Runtime complexity O(log n) - Logarithmic
+# Requires sorted data
 def binary_search(arr, target):
 
     # Find the middle element
@@ -23,8 +25,6 @@ def binary_search(arr, target):
             return midpoint
 
         elif arr[midpoint] > target:
-            # Toss out the left side of the array
-            # Since the midpoint is also irrelevant, we can +1 to start from the next value
             right = midpoint - 1
         else:
             left = midpoint + 1
